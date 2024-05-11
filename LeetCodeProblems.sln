@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TwoSum", "TwoSum\TwoSum.csproj", "{9229EB02-C9D4-49F1-8045-ABB8A70291B5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PalindromeNumber", "PalindromeNumber\PalindromeNumber.csproj", "{70E00C77-E575-4A6D-B36A-0BD280CCDBBF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RomanToInteger", "RomanToInteger\RomanToInteger.csproj", "{083FF08F-3D68-43D1-90E9-7A08BE00C7E5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9229EB02-C9D4-49F1-8045-ABB8A70291B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9229EB02-C9D4-49F1-8045-ABB8A70291B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9229EB02-C9D4-49F1-8045-ABB8A70291B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9229EB02-C9D4-49F1-8045-ABB8A70291B5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{70E00C77-E575-4A6D-B36A-0BD280CCDBBF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{70E00C77-E575-4A6D-B36A-0BD280CCDBBF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{70E00C77-E575-4A6D-B36A-0BD280CCDBBF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{70E00C77-E575-4A6D-B36A-0BD280CCDBBF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{083FF08F-3D68-43D1-90E9-7A08BE00C7E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{083FF08F-3D68-43D1-90E9-7A08BE00C7E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{083FF08F-3D68-43D1-90E9-7A08BE00C7E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{083FF08F-3D68-43D1-90E9-7A08BE00C7E5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
