@@ -10,34 +10,51 @@ I can be placed before V (5) and X (10) to make 4 and 9.
 X can be placed before L (50) and C (100) to make 40 and 90.
 C can be placed before D (500) and M (1000) to make 400 and 900.*/
 
-Console.WriteLine(RomanToInt("IV"));
+Console.WriteLine(RomanToInt("MCMXCIV"));
 
 int RomanToInt(string s)
 {
     int num = 0;
-    if (s.Contains("IV")) num += 4;
+
+    string[] partials = Enum.GetNames(typeof(PartialRomanNumbers));
+
+    foreach (var partial in partials)
+    {
+        Console.WriteLine(s);
+        
+        if (s.Contains(partial))
+        {
+            num += (int)Enum.Parse<PartialRomanNumbers>(partial);
+            s = s.Replace(partial, "");
+        }
+    }
+    
+    Console.WriteLine("String: {0}\nNumber: {1}", s, num);
     
     foreach (char character in s)
     {
-        int number = (int)Enum.Parse<RomanNumbers>(character.ToString());
+        int number = (int)Enum.Parse<FullRomanNumbers>(character.ToString());
         num += number;
     }
     
     return num;
 }
 
-public enum RomanNumbers {
-    I = 1,
-    VI = 4,
-    V = 5,
-    XI = 9,
-    X = 10,
+public enum FullRomanNumbers {
+     I = 1,
+     V = 5,
+     X = 10,
+     L = 50,
+     C = 100,
+     D = 500,
+     M = 1000
+ }
+ 
+public enum PartialRomanNumbers {
+    IV = 4,
+    IX = 9,
     XL = 40,
-    L = 50,
     XC = 90,
-    C = 100,
     CD = 400,
-    D = 500,
-    CM = 900,
-    M = 1000
+    CM = 900
 }

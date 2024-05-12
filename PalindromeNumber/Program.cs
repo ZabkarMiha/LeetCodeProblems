@@ -1,6 +1,4 @@
-﻿// See https://aka.ms/new-console-template for more information
-
-Console.WriteLine(isPalindrome(101)); 
+﻿Console.WriteLine(isPalindrome(101)); 
 
 bool isPalindrome(int x)
 {
